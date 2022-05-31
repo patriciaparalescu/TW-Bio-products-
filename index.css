@@ -1,0 +1,253 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+body {
+    background: url('imagini/fundal7.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.5em;
+    margin: 0 0 1.5em 0;
+}
+
+.page-grid {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 990px 1fr;
+    grid-template-areas:
+        ". container ."
+        ". footer .";
+}
+
+.container {
+    grid-area: container;
+    background: white;
+    padding: 30px 20px;
+    border: 1px solid #f1f1f1;
+    box-shadow: 0px 6px #53acff;
+    border-radius: 0px 0px 4px 4px;
+}
+
+.footer {
+    grid-area: footer;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    background: white;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0px 4px #ccc;
+    border-radius: 4px;
+}
+
+
+.menu {
+    width: 990px;
+    margin: 80px auto 0 auto;
+    text-align: center;
+}
+
+.menu--light {
+    margin: 30px auto 0 auto;
+}
+
+.menu-item {
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 20px;
+    padding: 10px 40px 10px 40px;
+    background: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    outline: none;
+    color: #888;
+    vertical-align: bottom;
+}
+.menu-item-active {
+    position: relative;
+    bottom: -1px;
+    color: #45d4ff;
+    padding: 15px 40px 15px 40px;
+    margin-top: 0;
+}
+
+.title {
+    color:#f1f1f1;
+    background-color: #73d10068;
+    margin: 0;
+    font-size: 45px;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.subtitle {
+    color: #000000;
+    background-color: #73d10068;
+    font-size: 1.5em;
+    line-height: 2em;
+    margin: 0 0 1em 0;
+    text-align: center;
+}
+.header {
+    margin-top: 10px;
+}
+
+hr {
+    margin: 25px 0;
+    border: 1px solid #f1f1f1;
+}
+
+@media (max-width: 990px) {
+    .menu {
+        width: 100%;
+    }
+    .page-grid {
+        display: block;
+    }
+    .footer {
+        border-radius: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        background: none;
+    }
+    .header {
+        display: none;
+    }
+    .footer {
+        margin-top: 3px;
+    }
+}
+.page-grid {
+    margin: 100px 0;
+    display: grid;
+    grid-template-columns: 1fr 990px 1fr;
+    grid-template-rows: fit-content fit-content;
+    grid-template-areas:
+        ". about-content ."
+        ". footer .";
+}
+
+.about-content {
+    grid-area: about-content;
+    background: white;
+    
+    display: grid;
+    grid-template-columns: 2/5fr 2/5fr 1/5fr;
+    grid-gap: 20px;
+    grid-template-rows: 1fr fit-content;
+    grid-template-areas:
+        "my-avatar my-info my-list"
+        "my-social my-social my-social";
+    padding: 30px 20px;
+    border: 1px solid #f1f1f1;
+    box-shadow: 0px 6px #3ab0ff;
+    border-radius: 0px 0px 4px 4px;
+}
+.my-avatar {
+    grid-area: my-avatar;
+    justify-self: center;
+    align-self: center;
+}
+
+.my-info {
+    grid-area: my-info;
+}
+
+.my-list {
+    grid-area: my-list;
+}
+
+.my-social {
+    grid-area: my-social;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.my-social-item {
+    display: grid;
+    grid-template-columns: 45px 1fr ;
+    grid-template-rows: 45px fit-content;
+    grid-template-areas:
+        "my-icon my-icon-title"
+        "my-icon my-icon-subtitle";
+}
+
+.my-icon {
+    grid-area: my-icon;
+}
+
+.my-icon-title {
+    grid-area: my-icon-title;
+    color:darkblue;
+}
+
+.my-icon-subtitle {
+    grid-area: my-icon-subtitle;
+    color:seagreen;
+}
+.my-icon-title:hover{
+    background-color:rgba(36, 145, 253, 0.678);
+}
+.my-info-title {
+    color:dimgrey;
+    margin: 0;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.my-info-subtitle {
+    color: #999;
+    font-size: 1.5em;
+    line-height: 1em;
+    margin: 0 0 1em 0;
+}
+
+.my-info-content {
+    color:darkgreen;
+    margin: 0;
+    font-size: 1.2em;
+    line-height: 1.3em;
+    margin-bottom: 0;
+}
+.about-content {
+    
+    padding: 30px 20px;
+    border: 1px solid #f1f1f1;
+    box-shadow: 0px 6px #419bf5;
+    border-radius: 0px 0px 4px 4px;
+}
+
+.footer {
+    grid-area: footer;
+    margin-top: 30px;
+    background: white;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0px 4px #ccc;
+    border-radius: 4px;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0px 4px #ccc;
+    border-radius: 4px;
+}
+
+.copyright {
+    margin: 0;
+}

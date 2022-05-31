@@ -1,0 +1,39 @@
+{
+    "products": [
+        {
+            "id": "71ed9fb0-105e-11ea-983f-f5983827844a",
+            "name": "Aloe Vera Eco Juice",
+            "img": "imagini/f&d_2.jpeg"
+        },
+        {
+            "id": "89256140-105e-11ea-983f-f5983827844a",
+            "name": "Xylitol Natural Sweetener",
+            "img": "imagini/f&d_3.jpeg"
+        },
+        {
+            "id": "898c1250-105e-11ea-983f-f5983827844a",
+            "name": "Espresso Dark Roast Organic Coffee",
+            "img": "imagini/f&d_4.jpeg"
+        },
+        {
+            "id": "8a7fc120-105e-11ea-983f-f5983827844a",
+            "name": "Coconut Aminos Teriyaki Sauce",
+            "img": "imagini/f&d_5.jpeg"
+        },
+        {
+            "name": "Organic Coconut Cooking Oil",
+            "img": "imagini/f&d_6.jpeg",
+            "id": "ed060675-1d76-4596-b155-2739465da3b6"
+        },
+        {
+            "name": "Organic Coconut Sugar",
+            "img": "imagini/f&d_8.jpeg",
+            "id": "7f9503ac-5819-4b05-b63e-aa427ecadf83"
+        },
+        {
+            "name": "No Added Sugar Free Muesli",
+            "img": "imagini/f&d_9.jpeg",
+            "id": "39ed74a6-bce7-4158-ace7-ab414dc6d7f1"
+        }
+    ]
+}
